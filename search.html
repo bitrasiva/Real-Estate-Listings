@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="search-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <button type="submit">Search</button>
+        </form>
+        <section class="search-results">
+            <!-- Search results will be fetched from the server and displayed here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Real Estate Listings. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
